@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+    
+    <!-- 외부링크 -->
+    <!-- <script src="../js/common.js"/> -->
+    <script> 
+        // 주석: ctrl + /
+        // alert("gfjgh");
+
+        // var a = 12;
+        // var a = 'lkjhkjkj';
+        // var a = "lkjhkjkj";
+        // var a = "500";
+        // var a = Number(a);
+        // var a = true;
+        // var a = "true";
+        // var a = false;
+        // var a = "false";
+        // var a = null;
+        // var a = NULL;
+        // var a = Null;
+        // var a = "null";
+        var a;
+        // alert(typeof(a));
+
+        // ----------
+        // # 할당(대입) 연산자
+        var b = 1;
+        // # 산술 연산자
+        var num1 = 15;
+		var num2 = 2;
+		var result;
+		result = num1 + num2;
+		// alert(result); // 17
+		result = num1 - num2;
+		// alert(result); // 13
+		result = num1 * num2;
+		// alert(result); // 30
+		result = num1 / num2;
+		// alert(result); // 7.5
+		result = num1 % num2;
+		// alert(result); // 1
+        // # 문자열 결합 연산자
+        var t1 = "학교종이";
+        var t2 = " 땡땡땡 ";
+        var t3 = 8282;
+        var t4 = " 어서 모이자";
+        var result;
+
+        result = t1 + t2 + t3 + t4; 
+        // alert(result);        
+
+        result = t1 + t2 + t3 + t4 + " 그래그래 "; 
+        // alert(result); 
+        // # 복합 대입 연산자
+		var num1 = 10;
+		var num2 = 3;
+		num1 += num2;
+		// alert(num1, "<br>"); // 13
+
+		num1 -= num2;
+		// alert(num1, "<br>"); // 10
+
+		num1 *= num2;
+		// alert(num1, "<br>"); // 30
+
+		num1 %= num2;
+		// alert(num1, "<br>"); // 0         
+
+        // ----------
+        var str = "<table border='1'>";
+        str += "<tr>";
+        str += "<td>1</td><td>2</td><td>3</td>";
+        str += "</tr>";
+        str += "</table>";
+        // alert( str );
+        // document.write( str );
+        
+        // # 증감연산자
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+        
+        num1--; //9
+        document.write(num1, "<br>");
+
+        num1++; //10
+        document.write(num1, "<br>");    
+
+        result = num2++;  //result: 20, num2: 21  
+        document.write(result, "<br>"); 
+
+        result = ++num2;  //result: 22, num2: 22  
+        document.write(result, "<br>"); 
+
+        
+    </script>
+</body>
+</html>
