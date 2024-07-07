@@ -51,7 +51,7 @@
         var t1 = "학교종이";
         var t2 = " 땡땡땡 ";
         var t3 = 8282;
-        var t4 = " 어서 모이자";
+        var t4 = " 어서 모이자";
         var result;
 
         result = t1 + t2 + t3 + t4; 
@@ -89,18 +89,67 @@
         var result;
         
         num1--; //9
-        document.write(num1, "<br>");
+        // --num1; //9
+        // alert(num1, "<br>");
 
         num1++; //10
-        document.write(num1, "<br>");    
+        // ++num1; //10
+        // alert(num1, "<br>");    
 
-        result = num2++;  //result: 20, num2: 21  
-        document.write(result, "<br>"); 
+        // result = num2++;  //result: 20, num2: 21  
+        // alert(num2 + " : " + result); 
 
         result = ++num2;  //result: 22, num2: 22  
-        document.write(result, "<br>"); 
+        // alert(num2 + " : " + result); 
 
+        // # 비교연산자
+        var a = 10;
+		var b = 20;
+		var c = 10;
+		var f = "20";
+		var result;
+
+		// result = a > b;  // false
+		// alert(result, "<br>");
+		// result = a < b;  // true
+		// alert(result, "<br>");
+		// result = a <= b; // true
+		// alert(result, "<br>");
+		// result = b == f;  // true
+		// alert(result, "<br>");
+		// result = a != b;   // true
+		// alert(result, "<br>");
+		// result = b === f;  // false (자료형도 일치해야 함)
+		// alert(result, "<br>");
+
+        // 논리연산자
+        var a=10;
+        var b=20;
+        var m=30;
+        var n=40;
         
+        var result;
+        result= a>b || b>=m || m>n;     // false || false || false 
+        // alert(result);  // false
+        
+        result= a>b || b>=m || m<=n;   // false || false || true
+        // alert(result); // true
+        
+        result= a<=b && b>=m && m<=n; // true && false && true
+        // alert(result); // false
+        
+        result= a<=b && b<=m && m<=n; // true && true && true
+        // alert(result); // true
+        
+        result= !(a>b);  // !false
+        // alert(result); // true        
+        
+        // 삼항조건연산자
+        var a = 10;
+        var b = 3;
+
+        var result = a > b ? "javascript" : "hello";
+        // alert(result); //jvaascript
     </script>
 </body>
 </html>
