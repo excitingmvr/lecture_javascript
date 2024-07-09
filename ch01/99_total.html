@@ -150,6 +150,143 @@
         var result = a > b ? "javascript" : "hello";
         // alert(result); //jvaascript
 
+            // Array
+            var myArray5 = [1, 2, 3, "홍길동", "아무개"];
+            alert(myArray5[3]);
+
+
+        // if
+        var a = 10;
+
+        if(a > 20){
+            alert("a가 크다");
+        } else {
+            alert("a가 작다");
+        }
+
+        // 학점 (비교연산자)
+        // 90점 이상 a
+        // 80점 이상 b
+        // 70점 이상 c
+        // 60점 이상 d
+        // 50점 이하 f
+    
+        var engScore = 77;
+
+        if(engScore >= 90){
+            alert("A");
+        } else if(engScore >= 80){
+            alert("B");
+        } else if(engScore >= 70){
+            alert("C");
+        } else if(engScore >= 60){
+            alert("D");
+        } else {
+            alert("F");
+        }
+
+        // 학점 (비교연산자 + 논리연산자)
+        if(engScore >= 90){
+            alert("A");
+        } else if(engScore <= 89 && engScore >= 80){
+            alert("B");
+        } else if(engScore <= 79 && engScore >= 70){
+            alert("C");
+        } else if(engScore <= 69 && engScore >= 60){
+            alert("D");
+        } else {
+            alert("F");
+        }
+
+        //  중첩 if 학점 세부 (스크린 확인)
+        // 90점 이상 a
+            // 100 ~ 97 : a+
+            // 96 ~ 94 : a0
+            // 93 ~ 90 : a-
+        // 80점 이상 b
+        // 70점 이상 c
+        // 60점 이상 d
+        // 50점 이하 f
+        if(eng >= 90) {
+            if(eng >= 97) {
+                alert("A+");
+            } else if(eng <= 96 && eng >= 94) {
+                alert("A0");
+            } else {
+                alert("A-");
+            }
+        } else if(eng >= 80 && eng <= 89) {
+            if(eng <= 89 && eng >= 87) {
+                alert("B+");
+            } else if(eng <= 86 && eng >= 84) {
+                alert("B0");
+            } else {
+                alert("B-");
+            }
+        } else if(eng >= 70 && eng <= 79) {
+            if(eng <= 79 && eng >= 77) {
+                alert("C+");
+            } else if(eng <= 76 && eng >= 74) {
+                alert("C0");
+            } else {
+                alert("C-");
+            }
+        } else if(eng >= 60 && eng <= 69) {
+            if(eng <= 69 && eng >= 67) {
+                alert("D+");
+            } else if(eng <= 66 && eng >= 64) {
+                alert("D0");
+            } else {
+                alert("D-");
+            }
+        } else {
+            alert("F");
+        }
+        // switch
+
+        var singer = "토니";
+
+        switch(singer) {
+            case "장원영":
+                alert("예쁘십니다.");
+                break;
+            case "전지현":
+                alert("잠만잡니다.");
+                break;
+            default:
+                alert("default");
+                break;
+        }
+
+        var weekday = "월";
+        switch(weekday) {
+            case"월":
+                alert("오늘은 월요일 입니다");
+                break;
+            case"화":
+                alert("오늘은 화요일 입니다");
+                break;
+            case"수":
+                alert("오늘은 수요일 입니다");
+                break;
+            case"목":
+                alert("오늘은 목요일 입니다");
+                break;
+            case"금":
+                alert("오늘은 금요일 입니다");
+                break;
+            case"토":
+                alert("오늘은 토요일 입니다");
+                break;
+            case"일":
+                alert("오늘은 일요일 입니다");
+                break;
+            default:
+                alert("요일이 아닙니다");
+                break;
+        }
+
+
     </script>
 </body>
 </html>

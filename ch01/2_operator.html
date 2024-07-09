@@ -53,7 +53,47 @@
     // result = num1++; // 10
     result = ++num1;    // 11
 
-    alert(result + " : " + num1);
+    // alert(result + " : " + num1);
+
+    // # 비교연산자
+    var a = 10;
+    var b = 20;
+    var c = 10;
+    var f = "20";
+    var result;
+
+    result = a > b;
+    result = a >= b;
+    result = a < b;
+    result = a <= b;
+    result = a != b;
+    result = a == b;
+    // alert(result);
+    
+    var result2;
+    // result2 = b == f;
+    result2 = b === f;  // data type comp
+    result2 = b !== f;
+    // alert(result2);
+
+    // 논리연산자
+    var a=10;
+    var b=20;
+    var m=30;
+    var n=40;
+
+    // result = a>b && b>=m; // and
+    // result = a>b || b>=m; // or
+    result = !(a>b);
+    // alert(result);
+
+    // 삼항조건연산자
+    var a = 10;
+    var b = 13;    
+    
+    var result = a > b ? "javascript" : "hello";
+    alert(result);
+
 </script>
 </body>
 </html>
