@@ -62,16 +62,16 @@
 		var num1 = 10;
 		var num2 = 3;
 		num1 += num2;
-		// alert(num1, "<br>"); // 13
+		// alert(num1); // 13
 
 		num1 -= num2;
-		// alert(num1, "<br>"); // 10
+		// alert(num1); // 10
 
 		num1 *= num2;
-		// alert(num1, "<br>"); // 30
+		// alert(num1); // 30
 
 		num1 %= num2;
-		// alert(num1, "<br>"); // 0         
+		// alert(num1); // 0         
 
         // ----------
         var str = "<table border='1'>";
@@ -285,7 +285,57 @@
                 alert("요일이 아닙니다");
                 break;
         }
+        // for
+        for(let i=1; i <= 3; i++){
+            alert("jhgkj");
+        }
 
+        // while
+        var i = 1;
+        while( i <= 3 ) {
+            alert("안녕하세요" + i, "<br />");
+            i++;
+        }
+        
+        // do-while
+        var i = 10;
+        do {
+            alert("hello!!");
+        } while ( i < 3 )
+
+        // break
+        for(var i = 1; i <= 5; i++){ 
+            if(i == 3) break;
+            alert(i);
+        }
+
+        // continue: for
+        for(var i = 1; i <= 5; i++){
+            if( i % 2 == 0 ) continue;
+            alert(i);
+        }
+        
+        // continue: while
+        // var i = 1;
+        // while( i <= 3 ) {
+        //     if( i % 2 == 0 ) continue;
+        //     alert("안녕하세요 " + i);
+        //     i++;
+        // }
+
+        var i = 0;
+        var n = 0;
+
+        while (i < 5) {
+            i++;
+            alert(n);
+            if (i === 3) {
+                continue;
+            }
+            n += i;
+        }
+
+        
 
     </script>
 </body>
