@@ -40,9 +40,9 @@
         // sum = 2 * i;
         // alert("2 * " + i + " = " + sum);
         // alert("2 * " + i + " = " + 2*i);
-        console.log("2 * " + i + " = " + 2*i);
+        // console.log("2 * " + i + " = " + 2*i);
     }
-    console.log("-----");
+    // console.log("-----");
     // 2~9단
 // 2 * 1 = 2
 // ------
@@ -55,11 +55,68 @@
 
     // 2단 홀수만
 
-    // *
-    // **
-    // ***
-    // ****
-    // *****
+    // *1
+    // **2
+    // ***3
+    // ****4
+    // *****5
+
+    
+    let star = "";
+    for(let i=1; i<=5; i++){
+        for(let j=1; j<=i; j++){
+            star += "*";
+            // console.log(i + " : " + j + " : " + star);
+        }
+        // console.log(star);
+        star = "";
+    }
+
+
+//     *   
+//    ***
+//   *****
+//  *******
+// *********
+
+    let star2 = "";
+    var empty = "";
+    for(let i=1; i<=5; i++){
+        for(let j=1; j<=(2*i)-1; j++){
+            star2 += "*";
+        }
+        for(let k=(5-i); k>=1; k--){
+            empty += " ";
+            // console.log(i + " : " + j + " : " + k);
+        }
+        // console.log(empty + star2 + empty);
+        // console.log(star2);
+        star2 = "";
+        empty = "";
+    }
+
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+    let star3 = "";
+    var empty2 = "";
+    for(let i=1; i<=5; i++){
+        for(let j=1; j<=i; j++){
+            star3 += "*";
+        }
+        for(let k=(5-i); k>=1; k--){
+            empty2 += " ";
+            // console.log(i + " : " + j + " : " + k);
+        }
+        console.log(empty2 + star3);
+        // console.log(star2);
+        star3 = "";
+        empty2 = "";
+    }
 
 </script>
 </body>
